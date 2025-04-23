@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikaBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2565f177f.js" crossorigin="anonymous"></script>  <!-- ICONS from FontAwesome-->
+    <!-- this is fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400;500;600;700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- end of fonts -->
+</head>
+<body class="main-color">
+<!-- START OF HEADER -->
+<header>
+    <div class="wrapper">
+        <div class="header-content">
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="images/logo/logo.svg" alt="" class="logo-image"></a>
+                <img src="images/logo/logo-heading.svg" alt="" class="logo-heading">
+            </div>
+            <nav class="navbar">
+                <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#" id="your-pokedex-link">Your Pokedex</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="search-background">
+        <div class="wrapper">
+            <form action="search" class="search">
+                <input type="text" class="search-input">
+                <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<!-- END OF HEADER -->
+<!-- SATRT OF HOME PAGE -->
+<main>
+<section id="homePage">
+    <div class="wrapper">
+        <h2 class="main_heading">Main Pokedex</h2>
+        <div class="cards-background">
+            <div class="cards-grid" style="text-transform: capitalize;" >  <!-- HERE WILL BE JS FOR ALL CARDS--> 
+            </div>
+            <button class="button-show-more">show more</button>
+        </div>
+    </div>
+</section>
+<!-- END OF HOME PAGE -->
+<!-- START OF MODAL DESCRIPTION PAGE -->
+<section id="modal-description" style="display: none;">
+    <div class="description-color">
+        <div class="wrapper">
+            <div class="cards-background-description modal-content">
+                <div class="pokemon-status">
+                    <h1 class="pokemon-name-full" style="text-transform: capitalize;"></h1>
+                    <img src="images/star/unactive-star.svg" alt="" class="pokemon-star">  <!-- Will changes in JS, localstorage-->
+                </div>
+                <h5 class="pokemon-description-id">#</h5>
+                <div class="modal-grid-for-big-screens">
+                    <img src="images/pokemons/bulbasaur.png" alt="" class="pokemon-image-full">
+                    <div class="pokemon-description">
+                        <h2 class="description-heading" id="pokemonType" style="text-transform: capitalize;"></h2>
+                        <p class="pokemonDetails" style="text-transform: capitalize;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END OF MODAL DESCRIPTION PART -->
+<!-- START OF YOUR POKEMONS PAGE -->
+<section id="yourPokedexPage" style="display: none;">
+    <div class="wrapper for_fixed_footer">
+        <h2 class="main_heading">Your Pokedex</h2>
+        <div class="cards-background">
+            <div class="cards-grid" id="your-pokedex-grid"></div>
+        </div>
+    </div>
+</section>
+</main>
+<!-- END OF YOUR POKEMON PAGE -->
+<!-- START OF FOOTER -->
+<footer>
+    <div class="wrapper">
+        <div class="footer-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/logo.svg" alt="" class="logo-image"></a>
+                <img src="images/logo/logo-heading.svg" alt="" class="logo-heading">
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyrights">
+        <div class="wrapper">
+            <div class="copyrights">
+                <h3>Powered by Anna Nikiforova</h3>
+                <h3>2025</h3>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+<script src="script.js"></script> <!-- JS Conenctivity -->
+</body>
+</html>

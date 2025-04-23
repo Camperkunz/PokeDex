@@ -1,0 +1,484 @@
+/* start of reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset */
+
+.main-color{
+	background-color: #F1F6FF;
+}
+.description-color {
+    padding: 0 0;
+	min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+h1, h2{
+	font-family: "Kodchasan", sans-serif;
+	font-weight: 400;
+}
+h3, h4, h5, h6{
+	font-family: "Kodchasan", sans-serif;
+  	font-weight: 300;
+}
+p{
+	font-family: "League Spartan", sans-serif;
+	font-size: 1.2rem;
+}
+button{
+	font-family: "Kodchasan", sans-serif;
+  	font-weight: 800;
+	cursor: pointer;
+}
+header{
+    background-color: #D24561;
+}
+.main_heading{
+	font-family: "Kodchasan", sans-serif;
+	font-size: 2.3rem;
+	font-weight: 500;
+	text-align: center;
+	margin: 10% auto;
+}
+.search-background{
+    background-color: #03193E;
+	padding: 12px 0;
+}
+.cards-background{
+	background-color: #D0E1FF;
+	border-radius: 15px;
+	margin: 5% 0;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer{
+	background-color: #03193E;
+}
+.for_fixed_footer {
+	min-height: calc(80vh - 100px);
+	display: flex;
+	flex-direction: column;
+  }
+.footer-copyrights{
+	background-color: #D24561;
+	color: white;
+	padding: 10px 0;
+}
+.description-heading{
+	font-size: 1.7rem;
+	margin: 5px 0 15px 0;
+}
+
+/* FIRST FOR MOBILE */
+.wrapper{    /* this is wrapper for mobile */
+	width: 85%;
+	margin: auto;
+}
+.header-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.2rem 0;
+}
+/* end of wrapper */
+/* START OF HEADER PART for MOBILE*/
+.logo{
+	display: flex;
+}
+.logo-image{
+    width: 3rem;
+	cursor: pointer;
+}
+.logo-heading{
+	display: none;
+}
+/*  */
+/*  */
+.burger-menu {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem 0 0 0;
+	cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+	font-size: 1.1rem;
+	font-family: "Kodchasan", sans-serif;
+	font-weight: 500;
+    position: absolute;
+    top: 75px;
+    right: 30px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+.nav-links a {
+	text-decoration: none;
+}
+.nav-links a:hover {
+	color: #D24561;
+}
+
+.burger-menu span {
+	height: 5px;
+	width: 45px;
+	background-color: white;
+	margin: 5px 0;
+}
+.burger-menu:hover span {
+    background-color: #03193E;
+}
+
+/*  */
+.search{
+	display: flex;
+	max-width: 270px;
+	border-radius: 7px;
+	overflow: hidden;
+	margin: auto;
+}
+.search-input{
+	font-family: "League Spartan", sans-serif;
+	font-size: 1.2rem;
+    flex: 1;
+  	border: none;
+	outline: none;
+}
+.search-button {
+	border: none;
+	background-color: white;
+	padding: 3px 5px;
+	font-size: 25px;
+}
+/*  */
+/* END OF HEADER PART for MOBILE */
+
+/* START OF BODY PART for MOBILE */
+/* pokemon cards style */
+.cards-grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px 20px;
+}
+.pokemon-card{
+	border-radius: 15px;
+	background-color:  #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pokemon-image{
+	max-width: 90%;
+}
+.pokemon-name{
+	margin: 8px 0 0 0;
+	font-size: 1.3rem;
+}
+.pokemon-card-button{
+	font-size: 1rem;
+	background-color: #03193E;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	text-transform: uppercase;
+	width: 85%;
+	margin: 10px;
+	padding: 5px;
+}
+.pokemon-card-button:hover{
+	font-size: 1rem;
+	background-color: #D24561;
+	color: white;
+}
+/* end of cards */
+/* show more button*/
+.button-show-more{
+	display: flex;
+	margin: 25px auto 0 auto;
+	background-color: #D24561;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 20px;
+	font-size: 1.3rem;
+}
+.button-show-more:hover{
+	background-color: #03193E;
+}
+/* END OF BODY PART */
+/* START OF FOOTER */
+.copyrights{
+	display: flex;
+	justify-content: space-between;
+}
+footer .burger-menu:hover span {
+    background-color: #D24561;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+/* END OF FOOTER */
+
+/* START OF DESCRIPTION PAGE */
+/* This is for MODAL */
+#modal-description {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+	width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+/*  */
+.cards-background-description{
+	background-color: #F1F6FF;
+	border-radius: 15px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.pokemon-status{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+}
+.pokemon-name-full{
+	font-size: 2.7rem;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+.pokemon-star{
+	max-width: 35px;
+	position: absolute;
+  	right: 0;
+}
+.pokemon-image-full{
+	max-width: 100%;
+	background-color: #D0E1FF;
+	border-radius: 10px;
+	margin: auto;
+}
+.pokemon-description-id{
+	margin: 5px;
+	font-size: 20px;
+}
+.pokemon-additional-description{
+	background-color: #dfeaff7b;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+  
+
+/* TABLETS */
+@media screen and (min-width: 700px) {
+	/* wrapper */
+	.wrapper{
+		width: 80%;
+		margin: auto;
+	}
+	/* end of wrapper */
+	/* START OF HEADER */
+	/* logo */
+	.logo{
+		display: flex;
+	}
+	.logo-image{
+		width: 4rem;
+	}
+	.logo-heading{
+		max-width: 40%;
+		display: flex;
+	}
+	/*  */
+	/*  */
+	.search{
+		display: flex;
+		max-width: 60%;
+	}	
+	.burger-menu {
+		margin: 1rem 0 0 0;
+	}
+	.nav-links {
+		top: 11%;
+		right: 10%;
+	}
+	.main_heading{
+		margin: 5% auto;
+	}
+	/*  */
+	/* END OF HEADER */
+	/* START OF BODY PART */
+	.cards-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 15px 30px;
+	}
+	.pokemon-image{
+		max-width: 80%;
+	}
+	/* END OF BODY PART */
+	/* START OF FOOTER */
+	.footer-content{
+		padding: 2.5rem 0;
+	}
+	/*END OF FOOTER  */
+	/* START OF DESCRIPTION PAGE */
+	#modal-description {
+		position: fixed;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.7); 
+		width: 100%;
+		height: 100vh;
+		overflow-y: auto;
+	}
+	.pokemon-star{
+		max-width: 40px;
+	}
+	.cards-background-description{
+		border-radius: 15px;
+		padding: 30px;
+		max-width: 80%;
+		margin: auto;
+	}
+	.pokemon-image-full{
+		max-width: 100%;
+		background-color: #D0E1FF;
+		border-radius: 10px;
+		margin: auto;
+	}
+	.pokemon-description{
+		padding: 10px;
+		text-align: center;
+		width: 100%;
+	}
+	.pokemon-description-id{
+		margin: 5px;
+		font-size: 20px;
+	}
+	.modal-grid-for-big-screens{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+/* LAST DESKTOP  */
+@media screen and (min-width: 1200px){
+	/* wrapper */
+	.wrapper{
+		width: 75%;
+		margin: auto;
+	}
+	/* end of wrapper */
+	/* START OF HEADER */
+	/* logo */
+	.logo-image{
+		width: 4.5rem;
+	}
+	.logo-heading{
+		max-width: 50%;
+		display: flex;
+	}
+	/*  */
+	/*  */
+	.burger-menu {
+		margin: 1.5rem 0 0 0;
+	}
+	.nav-links {
+		top: 5%;
+		right: 17%;
+	}
+	.main_heading{
+		font-size: 3rem;
+		margin: 3% auto;
+	}
+	/* END OF HEADER */
+	/* START OF BODY PART */
+	.cards-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 30px 40px;
+	}
+	.pokemon-image{
+		max-width: 60%;
+	}
+	.cards-background{
+		margin: 3% 0;
+	}
+	/*END OF BODY PART  */
+	/* START OF DESCRIPTION PAGE */
+	.pokemon-star{
+		max-width: 50px;
+	}
+	#modal-description {
+		position: fixed;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.7); 
+		width: 100%;
+		height: 100vh;
+		overflow-y: auto;
+	}
+	.cards-background-description{
+		border-radius: 15px;
+		padding: 30px;
+		max-width: 60%;
+		margin: auto;
+	}
+}
